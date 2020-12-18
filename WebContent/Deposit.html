@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <link rel="stylesheet" href="Deposit.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div id="container">
+        <nav id="my-nav">
+            <h2 id="bank"><a href="Home.html">JT Bank</a></h2>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Withdraw.html">Withdraw</a></li>
+                <li><a href="Enquiry">Enquiry</a></li>
+                <li><a href="Deposit.html">Deposit</a></li>
+                <li><a href="Transfer.html">Transfer</a></li>
+                <li><a href="Transaction.jsp">Transaction</a></li>
+            </ul>
+            <h3 id="log"><a href="Logout">Logout</a></h3>
+            <h3 id="log"><a href="Profile">Profile</a></h3>
+        </nav>
+
+        <div id="my-form">
+            <h3>Deposit</h3>
+            <form action="Deposit" method="POST" > 
+                <label>Enter Amount</label><br>
+                <input type="text" name="data" placeholder="00000.00" pattern="(?=.*[0-9]).{1,9}" title="Enter valid Number" required="required"><br>
+                <input type="submit" value="Deposit">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

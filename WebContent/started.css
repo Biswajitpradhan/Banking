@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#container #my-nav{
+    height: 90px;
+    background: rgb(236, 234, 234);
+}
+#container #my-nav h3{
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 35px;
+    user-select: none;
+}
+#container #my-nav a{
+   float: right;
+   margin-top: 25px;
+   margin-right: 60px;
+   font-size: 24px;
+   box-sizing: border-box;
+   text-decoration: none;
+   color: #eb5b77;
+   border: 1px solid #eb5b77;
+   border-radius: 50px;
+   padding:5px 20px;
+   background: rgb(236, 234, 234);
+   transition: background 0.8s linear;
+}
+#container #my-nav a:hover{
+    background: #eb5b77;
+    color: white;
+}
+
+#container #content h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+#container #content h3,p,h4{
+    margin-left: 100px;
+}
+#container #content h3{
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#container #content p{
+    width: 700px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#container #content h4{
+    display: inline-block;
+    font-size: 17px;
+}
+#container #content a{
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #eb5b77;
+    border: 1px solid #eb5b77;
+    background: white;
+    padding: 7px 20px;
+    border-radius: 40px;
+    transition: background 0.7s linear;
+}
+#container #content a:hover{
+    background: #eb5b77;
+    color: white;
+}
+#container #content img{
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin-top:-200px;
+}

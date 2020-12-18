@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup here</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+                <h1>JT Bank</h1>
+        </div>
+        <center>
+            <div id="content">
+                
+                <div id="myform">
+                    <h3>Signup</h3>
+                    <form action="Register" method="POST">
+                       <label>Enter Username</label><br>
+                       <input type="text" name="user" placeholder="Enter Username" pattern="(?=.*[a-z])(?=.*[A-Z]).{6,15}" title="Username must contain  1. small character 2. capital character 3. length (6-15)" required><br>
+                       <label>Enter First_Name</label><br>
+                       <input type="text" name="first" placeholder="Enter Firstname" pattern="(?=.*[a-z])(?=.*[A-Z]).{1,25}" title="Firstname must contain  1. small character 2. capital character 3. length (1-25)" required><br>
+                       <label>Enter Last_Name</label><br>
+                       <input type="text" name="last" placeholder="Enter Lastname" pattern="(?=.*[a-z])(?=.*[A-Z]).{1,25}" title="Lastname must contain  1. small character 2. capital character 3. length (1-25)" required><br>
+                       <label>Enter Password</label><br>
+                       <input type="password" name="pass" placeholder="Enter password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$&_]).{6,10}" title="password must contain  1. small character 2. capital character 3. length (6-10) 4. and special character(@#$&_)"  required><br>
+                       <label>Enter Email</label><br>
+                       <input type="email" name="email" placeholder="xyz@gmail.com" required><br>
+                       <label>Enter Number</label><br>
+                       <input type="number" name="number" placeholder="Enter Number" pattern="(?=.*[0-9]).{10}" title="Number must be 10 digit in length" required><br>
+                       <label>Enter Aadhar No</label><br>
+                       <input type="text" name="aadhar" placeholder="xxxx xxxx xxxx" pattern="(?=.*[0-9]).{12}" title="Aadhar must be 12 digit in length" required><br>
+                       <label>Enter Pan No.</label><br>
+                       <input type="text" name="pan" placeholder="31c2r43dg4" pattern="(?=.*[0-9])(?=.*[a-z]).{10}" title="PAN must contain numbers and small letters and length must be 10." required><br>
+                       <label>Enter Age</label><br>
+                       <input type="text" name="age" placeholder="Enter Age" pattern="(?=.*[0-9]).{1,2}" title="Age must contain number and length is 2." required><br>
+                       <label>Enter DOB</label><br>
+                       <input type="date" name="dob"  required><br>
+                       <label>Select Country</label><br>
+                        <select required name="country">
+                            <option>--select Country--</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Japan">Japan</option>
+                            <option value="UK">UK</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                        </select>
+                        <label>Select State</label><br>
+                        <select required  name="state">
+                            <option>--select State--</option>
+                            <option value="odisha">Odisha</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Andrapradesh">Andrapradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="chhattisgarh">chhattisgarh</option>
+                        </select>
+                        <label>Enter Address</label><br>
+                        <textarea name="address" placeholder="Enter Address"></textarea>
+                       <input id="sub" type="submit" value="signup">
+                    </form>
+                </div>
+            </div>
+        </center>
+    </div>
+</body>
+</html>
